@@ -1,0 +1,141 @@
+\hypertarget{class_photo_lister}{
+\section{PhotoLister Class Reference}
+\label{class_photo_lister}\index{PhotoLister@{PhotoLister}}
+}
+
+
+This widget contains and displays a list of photos.  
+
+
+
+
+{\ttfamily \#include $<$photolister.h$>$}
+
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_photo_lister_a9f92af173ae38a2f1343a393cc6b9ce1}{
+void {\bfseries addPhotosFromComputer} ()}
+\label{class_photo_lister_a9f92af173ae38a2f1343a393cc6b9ce1}
+
+\item 
+\hypertarget{class_photo_lister_a9083124814ee6ce505f257657dcfd6eb}{
+void {\bfseries addPhotosFromWeb} ()}
+\label{class_photo_lister_a9083124814ee6ce505f257657dcfd6eb}
+
+\item 
+\hypertarget{class_photo_lister_a5f579d9ef5dc76692d64e14cd319abc3}{
+void {\bfseries addPhotosFinished} ()}
+\label{class_photo_lister_a5f579d9ef5dc76692d64e14cd319abc3}
+
+\item 
+\hypertarget{class_photo_lister_aa66b5ba82d2601effd77bd3fc078d3e0}{
+void {\bfseries removeSelectedPhotos} ()}
+\label{class_photo_lister_aa66b5ba82d2601effd77bd3fc078d3e0}
+
+\item 
+\hypertarget{class_photo_lister_a1d28f68db398db99bca6d379ffc3e28d}{
+void {\bfseries removeAllPhotos} ()}
+\label{class_photo_lister_a1d28f68db398db99bca6d379ffc3e28d}
+
+\item 
+\hypertarget{class_photo_lister_abb59b06e5ffd3292d598a5386f788dba}{
+void {\bfseries rotatePhotosLeft} ()}
+\label{class_photo_lister_abb59b06e5ffd3292d598a5386f788dba}
+
+\item 
+\hypertarget{class_photo_lister_a860bddcce4c50200d1fa53f2e572142b}{
+void {\bfseries rotatePhotosRight} ()}
+\label{class_photo_lister_a860bddcce4c50200d1fa53f2e572142b}
+
+\item 
+\hypertarget{class_photo_lister_a6e77c3c438ff073c23b02635735628ea}{
+void {\bfseries showContextMenu} (const QPoint \&pos)}
+\label{class_photo_lister_a6e77c3c438ff073c23b02635735628ea}
+
+\item 
+\hypertarget{class_photo_lister_ab186577203248411ecdb53c1760b7c72}{
+void {\bfseries photoLoadedAt} (int n)}
+\label{class_photo_lister_ab186577203248411ecdb53c1760b7c72}
+
+\item 
+\hypertarget{class_photo_lister_aa3e6dfa7d0dce9718107c714a20b8088}{
+void {\bfseries previewPhoto} ()}
+\label{class_photo_lister_aa3e6dfa7d0dce9718107c714a20b8088}
+
+\item 
+\hypertarget{class_photo_lister_a572671939e0b0ebf9cba671f6ba474b5}{
+void {\bfseries previewPhoto} (QListWidgetItem $\ast$item)}
+\label{class_photo_lister_a572671939e0b0ebf9cba671f6ba474b5}
+
+\item 
+\hypertarget{class_photo_lister_a7daad4a98cbf361b0107228cbb66e848}{
+void {\bfseries updateCurrentPhoto} ()}
+\label{class_photo_lister_a7daad4a98cbf361b0107228cbb66e848}
+
+\end{DoxyCompactItemize}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_photo_lister_af58c607f8074643383702173c6a61e08}{
+void {\bfseries currentPhotoChanged} (const QPixmap \&)}
+\label{class_photo_lister_af58c607f8074643383702173c6a61e08}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_photo_lister_ae3cf0ff67739d47a949a90344212360b}{
+{\bfseries PhotoLister} (QWidget $\ast$parent=0)}
+\label{class_photo_lister_ae3cf0ff67739d47a949a90344212360b}
+
+\item 
+\hypertarget{class_photo_lister_ac9af00759ab8e7e8af6d6d933766dad3}{
+QList$<$ QPixmap $>$ {\bfseries getPhotos} () const }
+\label{class_photo_lister_ac9af00759ab8e7e8af6d6d933766dad3}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_photo_lister_a97d747f553642b346bda6c9ebfcd5518}{
+void {\bfseries dragEnterEvent} (QDragEnterEvent $\ast$event)}
+\label{class_photo_lister_a97d747f553642b346bda6c9ebfcd5518}
+
+\item 
+\hypertarget{class_photo_lister_aee1bbcb6b771cb329f9ca283081a9190}{
+void {\bfseries dragMoveEvent} (QDragMoveEvent $\ast$event)}
+\label{class_photo_lister_aee1bbcb6b771cb329f9ca283081a9190}
+
+\item 
+\hypertarget{class_photo_lister_a561c938e5a08d1dadab6a8a7feda2685}{
+void {\bfseries dragLeaveEvent} (QDragLeaveEvent $\ast$event)}
+\label{class_photo_lister_a561c938e5a08d1dadab6a8a7feda2685}
+
+\item 
+\hypertarget{class_photo_lister_a4cdd16d165fea01d5dcdbce3d79e7f23}{
+void {\bfseries dropEvent} (QDropEvent $\ast$event)}
+\label{class_photo_lister_a4cdd16d165fea01d5dcdbce3d79e7f23}
+
+\item 
+\hypertarget{class_photo_lister_a9febcbeb507231404ca0b36e019ac8fb}{
+void {\bfseries keyPressEvent} (QKeyEvent $\ast$event)}
+\label{class_photo_lister_a9febcbeb507231404ca0b36e019ac8fb}
+
+\item 
+\hypertarget{class_photo_lister_a4234baf4d9ee4af015efec9aa53bc035}{
+void {\bfseries changeEvent} (QEvent $\ast$event)}
+\label{class_photo_lister_a4234baf4d9ee4af015efec9aa53bc035}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This widget contains and displays a list of photos. The widget allows to add photos from the computer or the web, and provides some basic methods (image rotation, image preview, etc.)
+
+\hyperlink{class_photo_lister}{PhotoLister} is integrated in theQuteCollage's main window, but can also be used as a standalone program. 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+photolister.h\item 
+photolister.cpp\end{DoxyCompactItemize}
