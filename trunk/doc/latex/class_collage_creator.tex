@@ -1,0 +1,129 @@
+\hypertarget{class_collage_creator}{
+\section{CollageCreator Class Reference}
+\label{class_collage_creator}\index{CollageCreator@{CollageCreator}}
+}
+
+
+This widget allows to create a phtoto collage.  
+
+
+
+
+{\ttfamily \#include $<$collagecreator.h$>$}
+
+
+
+Collaboration diagram for CollageCreator:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=600pt]{class_collage_creator__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_collage_creator_aeb7a294ef28befb9567ccd6a6133bc1e}{Shape} \{ \par
+{\bfseries Rectangle}, 
+{\bfseries Heart}, 
+{\bfseries Circle}, 
+{\bfseries Text}, 
+\par
+{\bfseries Extra}, 
+{\bfseries Random}
+ \}
+\begin{DoxyCompactList}\small\item\em This enum defines the collage's shape. \item\end{DoxyCompactList}\item 
+enum \hyperlink{class_collage_creator_ad3349d041784e87b5d49625ad4107d39}{Background} \{ {\bfseries Color}, 
+{\bfseries Transparent}, 
+{\bfseries Photo}
+ \}
+\begin{DoxyCompactList}\small\item\em This enum defines the collage's background. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_collage_creator_ad1d158a014e922b387f321502a379176}{
+void \hyperlink{class_collage_creator_ad1d158a014e922b387f321502a379176}{resetParameters} ()}
+\label{class_collage_creator_ad1d158a014e922b387f321502a379176}
+
+\begin{DoxyCompactList}\small\item\em Sets the collage default parameters. \item\end{DoxyCompactList}\item 
+\hypertarget{class_collage_creator_a245511fd2980e38e2d1c480bfb1fb22a}{
+void \hyperlink{class_collage_creator_a245511fd2980e38e2d1c480bfb1fb22a}{previewCollage} ()}
+\label{class_collage_creator_a245511fd2980e38e2d1c480bfb1fb22a}
+
+\begin{DoxyCompactList}\small\item\em Previews the collage. \item\end{DoxyCompactList}\item 
+\hypertarget{class_collage_creator_ae056e0a9ea90bd1793df32fb464fb3cf}{
+void \hyperlink{class_collage_creator_ae056e0a9ea90bd1793df32fb464fb3cf}{createCollage} ()}
+\label{class_collage_creator_ae056e0a9ea90bd1793df32fb464fb3cf}
+
+\begin{DoxyCompactList}\small\item\em Creates the collage (image) \item\end{DoxyCompactList}\item 
+\hypertarget{class_collage_creator_a9baf8b138cf2ddc7ec9147b550178fe0}{
+void \hyperlink{class_collage_creator_a9baf8b138cf2ddc7ec9147b550178fe0}{saveCollage} ()}
+\label{class_collage_creator_a9baf8b138cf2ddc7ec9147b550178fe0}
+
+\begin{DoxyCompactList}\small\item\em Save the already created collage (image) \item\end{DoxyCompactList}\item 
+\hypertarget{class_collage_creator_a6efba57c99880aff4029c8cf216fd23a}{
+void \hyperlink{class_collage_creator_a6efba57c99880aff4029c8cf216fd23a}{printCollage} ()}
+\label{class_collage_creator_a6efba57c99880aff4029c8cf216fd23a}
+
+\begin{DoxyCompactList}\small\item\em Prints the collage (image) \item\end{DoxyCompactList}\item 
+\hypertarget{class_collage_creator_ab067ae84833dfdb945b3c69615d0247d}{
+void \hyperlink{class_collage_creator_ab067ae84833dfdb945b3c69615d0247d}{updateCollageLayoutAnim} (bool enable)}
+\label{class_collage_creator_ab067ae84833dfdb945b3c69615d0247d}
+
+\begin{DoxyCompactList}\small\item\em Activates/Desactivates the animation of the collage's layout. \item\end{DoxyCompactList}\item 
+\hypertarget{class_collage_creator_a57ecc6f2b0221a28ea5fb403c7d53497}{
+void {\bfseries setShape} (\hyperlink{class_collage_creator_aeb7a294ef28befb9567ccd6a6133bc1e}{Shape} shape)}
+\label{class_collage_creator_a57ecc6f2b0221a28ea5fb403c7d53497}
+
+\item 
+\hypertarget{class_collage_creator_a0d1313570452d4b53e400db6e2df12f7}{
+void {\bfseries setBackground} (\hyperlink{class_collage_creator_ad3349d041784e87b5d49625ad4107d39}{Background} background)}
+\label{class_collage_creator_a0d1313570452d4b53e400db6e2df12f7}
+
+\end{DoxyCompactItemize}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_collage_creator_a855bb6652d08033355f87378a76e43c1}{
+void {\bfseries collageAvailable} (bool yes)}
+\label{class_collage_creator_a855bb6652d08033355f87378a76e43c1}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_collage_creator_a0b238ad59b58be98725267e25404037f}{
+{\bfseries CollageCreator} (QWidget $\ast$parent=0)}
+\label{class_collage_creator_a0b238ad59b58be98725267e25404037f}
+
+\item 
+\hypertarget{class_collage_creator_a620747082ee751776cf84ac690f4c221}{
+{\bfseries CollageCreator} (\hyperlink{class_main_window}{MainWindow} $\ast$mainWindow, QWidget $\ast$parent=0)}
+\label{class_collage_creator_a620747082ee751776cf84ac690f4c221}
+
+\item 
+\hypertarget{class_collage_creator_afa43b65209fb0f7f209d936ddc3eb4f8}{
+void {\bfseries setMainWindow} (\hyperlink{class_main_window}{MainWindow} $\ast$mainWindow)}
+\label{class_collage_creator_afa43b65209fb0f7f209d936ddc3eb4f8}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_collage_creator_af9db4b672c4d3104f5541893e08e1809}{
+class \hyperlink{class_collage_creator_af9db4b672c4d3104f5541893e08e1809}{MainWindow}}
+\label{class_collage_creator_af9db4b672c4d3104f5541893e08e1809}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This widget allows to create a phtoto collage. The widget allows to create a photo collage based on parameters defined by the user such as the collage shape, the space between each photo in the collage, etc.
+
+\hyperlink{class_collage_creator}{CollageCreator} is integrated in the QuteCollage's main window, but can also be used as a standalone program. 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+collagecreator.h\item 
+collagecreator.cpp\end{DoxyCompactItemize}
