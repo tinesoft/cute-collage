@@ -1,5 +1,6 @@
 
 #include <QtGui>
+#include <QToolTip>
 
 #include "characterwidget.h"
 

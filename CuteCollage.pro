@@ -13,7 +13,6 @@ TEMPLATE = app
 SOURCES += \
     imageutils.cpp \
     pixmaplistwidgetitem.cpp \
-    characterwidget.cpp \
     imagelabel.cpp \
     textcollageshape.cpp \
     clickablelabel.cpp \
@@ -24,6 +23,7 @@ SOURCES += \
     main.cpp \
     photolister.cpp \
     collagecreator.cpp \
+    characterwidget.cpp \
     mainwindow.cpp
 
 HEADERS  += mainwindow.h \
