@@ -20,11 +20,11 @@ SOURCES += \
     drawingarea.cpp \
     customcollageshape.cpp \
     application.cpp \
-    main.cpp \
     photolister.cpp \
     collagecreator.cpp \
     characterwidget.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    main.cpp 
 
 HEADERS  += mainwindow.h \
     photolister.h \
