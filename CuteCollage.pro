@@ -9,6 +9,8 @@ QT       += core gui widgets concurrent printsupport
 TARGET = CuteCollage
 TEMPLATE = app
 
+CONFIG += c++11
+DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     imageutils.cpp \
