@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui widgets concurrent printsupport
 
 TARGET = CuteCollage
 TEMPLATE = app
