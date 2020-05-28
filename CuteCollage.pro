@@ -10,12 +10,9 @@ TARGET = CuteCollage
 TEMPLATE = app
 
 
-SOURCES += main.cpp\
-        mainwindow.cpp \
-    photolister.cpp \
+SOURCES += \
     imageutils.cpp \
     pixmaplistwidgetitem.cpp \
-    collagecreator.cpp \
     characterwidget.cpp \
     imagelabel.cpp \
     textcollageshape.cpp \
@@ -23,7 +20,11 @@ SOURCES += main.cpp\
     graphicsview.cpp \
     drawingarea.cpp \
     customcollageshape.cpp \
-    application.cpp
+    application.cpp \
+    main.cpp \
+    photolister.cpp \
+    collagecreator.cpp \
+    mainwindow.cpp
 
 HEADERS  += mainwindow.h \
     photolister.h \
