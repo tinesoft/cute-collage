@@ -3,6 +3,7 @@
 
 #include <QUrl>
 #include <QFileInfo>
+#include <QMimeData>
 
 ImageLabel::ImageLabel(QWidget *parent) :
     QLabel(parent)
@@ -33,7 +34,7 @@ void ImageLabel::dropEvent(QDropEvent * event)
 
 }
 
-void ImageLabel::mouseReleaseEvent(QMouseEvent *ev)
+void ImageLabel::mouseReleaseEvent(QMouseEvent* /*ev*/)
 {
     emit clicked();
 }

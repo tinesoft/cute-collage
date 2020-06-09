@@ -15,6 +15,7 @@
 #include <QPrintDialog>
 #include <QMessageBox>
 #include <QDesktopServices>
+#include <QStandardPaths>
 
 CollageCreator::CollageCreator(QWidget *parent) :
         QWidget(parent),_mainWindow(0),ui(new Ui::CollageCreator)
@@ -212,7 +213,7 @@ void CollageCreator::createCollage()
 
     //getting the location where to save the image to
     QString collageName = QFileDialog::getSaveFileName(this,tr("Save collage as ..."),
-                                                       QDesktopServices::storageLocation(QDesktopServices::PicturesLocation),
+                                                       QStandardPaths::standardLocations(QStandardPaths::PicturesLocation).first(),
                                                        ImageUtils::supportedImageFormatsFilter());
 
     if(!collageName.isEmpty())
@@ -322,7 +323,7 @@ void CollageCreator::saveCollage()
 {
     //getting the location where to save the image to
     QString collageName = QFileDialog::getSaveFileName(this,tr("Save collage as ..."),
-                                                       QDesktopServices::storageLocation(QDesktopServices::PicturesLocation),
+                                                       QStandardPaths::standardLocations(QStandardPaths::PicturesLocation).first(),
                                                        ImageUtils::supportedImageFormatsFilter());
 
     if(!collageName.isEmpty())

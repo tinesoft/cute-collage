@@ -7,14 +7,13 @@
 #include <QIcon>
 #include <QImage>
 #include <QMatrix>
-
-
 #include <QFileDialog>
+#include <QMimeData>
 #include <QMessageBox>
 #include <QtConcurrentMap>
 #include <QProgressDialog>
 #include <QDesktopServices>
-
+#include <QStandardPaths>
 
 
 PhotoLister::PhotoLister(QWidget *parent) :
@@ -184,7 +183,8 @@ void PhotoLister::addPhotosFromComputer()
     //file dialog for selecting images to add
     QStringList imagesFileNames = QFileDialog::getOpenFileNames(
             this,tr("Select one or more photos"),
-            QDesktopServices::storageLocation(QDesktopServices::PicturesLocation),filter);
+            QStandardPaths::standardLocations(QStandardPaths::PicturesLocation).first(),
+            filter);
 
     if(imagesFileNames.isEmpty()) return ;
 

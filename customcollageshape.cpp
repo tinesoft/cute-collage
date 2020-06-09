@@ -4,6 +4,8 @@
 #include "imageutils.h"
 #include <QtGui>
 #include <QDesktopServices>
+#include <QFileDialog>
+#include <QStandardPaths>
 
 CustomCollageShape::CustomCollageShape(QWidget *parent) :
         QDialog(parent),
@@ -57,7 +59,7 @@ void CustomCollageShape::saveDrawingArea()
 {
     //getting the location where to save the image to
     QString fileName = QFileDialog::getSaveFileName(this,tr("Save image as ..."),
-                        QDesktopServices::storageLocation(QDesktopServices::PicturesLocation),
+                        QStandardPaths::standardLocations(QStandardPaths::PicturesLocation).first(),
                         ImageUtils::supportedImageFormatsFilter());
 
     if (!fileName.isEmpty())
@@ -73,7 +75,7 @@ void CustomCollageShape::loadImage()
 {
     //file dialog for selecting the image to load
     QString fileName = QFileDialog::getOpenFileName( this,tr("Open image"),
-                            QDesktopServices::storageLocation(QDesktopServices::PicturesLocation),
+                        QStandardPaths::standardLocations(QStandardPaths::PicturesLocation).first(),
                             ImageUtils::supportedImageFormatsFilter());
 
     if (!fileName.isEmpty())

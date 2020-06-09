@@ -1,5 +1,6 @@
 
 #include <QtGui>
+#include <QToolTip>
 
 #include "characterwidget.h"
 
@@ -73,7 +74,7 @@ void CharacterWidget::mousePressEvent(QMouseEvent *event)
 {
     if (event->button() == Qt::LeftButton) {
         _lastKey = (event->y()/_squareSize)*_columns + event->x()/_squareSize;
-        if (QChar(_lastKey).category() != QChar::NoCategory)
+        if (QChar(_lastKey).category() != 0 )
             emit characterSelected(QString(QChar(_lastKey)));
         update();
     }

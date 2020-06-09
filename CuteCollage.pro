@@ -4,26 +4,29 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui widgets concurrent printsupport
 
 TARGET = CuteCollage
 TEMPLATE = app
 
+CONFIG += c++11
+DEFINES += QT_DEPRECATED_WARNINGS
 
-SOURCES += main.cpp\
-        mainwindow.cpp \
-    photolister.cpp \
+SOURCES += \
     imageutils.cpp \
     pixmaplistwidgetitem.cpp \
-    collagecreator.cpp \
-    characterwidget.cpp \
     imagelabel.cpp \
     textcollageshape.cpp \
     clickablelabel.cpp \
     graphicsview.cpp \
     drawingarea.cpp \
     customcollageshape.cpp \
-    application.cpp
+    application.cpp \
+    photolister.cpp \
+    collagecreator.cpp \
+    characterwidget.cpp \
+    mainwindow.cpp \
+    main.cpp 
 
 HEADERS  += mainwindow.h \
     photolister.h \

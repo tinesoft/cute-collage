@@ -9,7 +9,7 @@
 #include <QFileDialog>
 #include <QMessageBox>
 #include <QDesktopServices>
-
+#include <QStandardPaths>
 #include <QStyleFactory>
 #include <QTranslator>
 
@@ -228,7 +228,7 @@ void MainWindow::openCollageBackgroundPhoto()
 {
     //file dialog for selecting the image to load
     QString fileName = QFileDialog::getOpenFileName( this,tr("Open image"),
-                                                     QDesktopServices::storageLocation(QDesktopServices::PicturesLocation),
+                                                     QStandardPaths::standardLocations(QStandardPaths::PicturesLocation).first(),
                                                      ImageUtils::supportedImageFormatsFilter());
 
     if (!fileName.isEmpty())
